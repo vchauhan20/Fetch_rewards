@@ -34,4 +34,4 @@ def calculate():
     return render_template('home.html',result_12=result_12 , result_23 = result_23 , result_13 = result_13)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=5000)
+    app.run(host="0.0.0.0")
