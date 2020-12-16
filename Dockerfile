@@ -1,8 +1,7 @@
-FROM alpine:latest
-RUN apk add --no cache python3-dev \ && pip3 install --upgarde pip
+FROM python:alpine:3.7
 COPY . /app
 WORKDIR /app
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 EXPOSE 5000
-ENTRYPOINT [ "python3" ]
+ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
