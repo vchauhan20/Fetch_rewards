@@ -23,7 +23,9 @@ html{
 }
 h1{
 	font-size: 4rem;
-	text-align: center;
+	text-align: center !important;
+	margin-bottom:25px;
+	margin-top:15px;
 }
 
 h2{
