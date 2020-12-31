@@ -1,7 +1,6 @@
 FROM python:alpine3.7
-ENV APP_HOME /app
-WORKDIR $APP_HOME
-COPY . ./
-EXPOSE $PORT
+RUN mkdir /app
+WORKDIR /app
+ADD . .
 RUN pip install -r requirements.txt
-CMD exec gunicorn app
+CMD gunicorn app:app --bind 0.0.0.0:$PORT --reload
