@@ -13,6 +13,8 @@ About : The code has been primarily written in Python language
 
 Just click on the link https://fetch-rewards-vijay.herokuapp.com/ 
 
+deployed the same app with docker https://vijayfetchdocker.herokuapp.com/
+
 **Testing the App
 
 Enter the text in the three text boxes 
