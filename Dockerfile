@@ -4,4 +4,4 @@ WORKDIR $APP_HOME
 COPY . ./
 EXPOSE $PORT
 RUN pip install -r requirements.txt
-CMD exec gunicorn app.py
+CMD exec gunicorn
